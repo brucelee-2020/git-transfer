@@ -1,0 +1,81 @@
+#1. set config
+git config --global user.name "brucelee-2020"
+git config --global user.email "brucelee__2010@163.com"
+
+#2. creat a null flow path  创建空目录
+mkdir pro_git
+
+#3. get the part   进入目录
+cd pro_git
+
+#4. git repository init   仓库初始化
+git init
+
+------------------------
+参考操作
+# 查看当前状态
+git status
+
+#添加到缓存区
+git add "文件名"
+git add "文件名1”“文件名2”----
+git add .       ——目录下 所有的文件；
+
+#提交到仓库中
+git commit -m " remark+文件名”——“”中的内容 remark 是修改描述，个人编写；但文件名必须和 add添加的一致
+
+
+----------------------------
+
+#查看版本
+git log
+git log--pretty=oneline
+
+#回退操作
+git reset --hard 版本号
+
+#查看历史操作，以得到最新的commit id
+git reflog   
+
+then, 和回退操作一致， 
+git reset --hard  commit id
+
+# 返回上一级
+git ..
+
+
+-------------------------------------
+
+
+#使用 clone 指令  克隆线上仓库到本地
+git clone 网址
+
+#在仓库上做对应的操作 （提交暂存区，提交本地仓库，提交线上仓库，拉取线上仓库）
+############ 必须先 权限控制,    不然报警 403
+权限控制， 需修改 config
+
+
+# git push  推送文件到线上仓库
+git push
+
+# git pull  拉取文件到线下
+git pull
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
